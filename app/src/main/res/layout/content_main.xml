@@ -28,12 +28,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/etUser"
         android:inputType="text"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="70dp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/tvPass"
-        android:layout_toEndOf="@+id/tvPass" />
+        android:layout_below="@+id/tvLogin"
+        android:layout_toLeftOf="@+id/sendLogin"
+        android:layout_toStartOf="@+id/sendLogin" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -91,7 +88,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Port:"
         android:id="@+id/tvPort"
-        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@+id/etPort"
+        android:layout_alignBottom="@+id/etPort"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -101,7 +99,7 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/etPort"
-        android:layout_alignTop="@+id/tvPort"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/etDomain"
         android:layout_alignStart="@+id/etDomain" />
 
@@ -112,6 +110,7 @@
         android:id="@+id/sendLogin"
         android:layout_marginTop="52dp"
         android:layout_below="@+id/etPort"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="sendLogin"/>
 
 </RelativeLayout>
